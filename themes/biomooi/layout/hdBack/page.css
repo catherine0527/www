@@ -1,0 +1,63 @@
+/* Add css rules here that are valid for the whole page */
+#pgContainer {
+	margin: 0px auto;
+	width: 960px;
+}
+
+#pgHead {
+	margin: 5px 0px;
+}
+
+#pgContent {
+	margin: 5px;
+}
+
+#pgFooter {
+	clear: both;
+}
+
+/* customize bootstrap */
+.page-header {
+	margin-top: 0px;
+}
+.table>tbody>tr>td {
+	padding: 7px;
+}
+.table>tbody>tr>td:last-child {
+	padding: 5px 8px 0;
+}
+.btn-purple {
+	color: #fff;
+	background: #5a84dd;
+	border-color: #406cc4;
+}
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:active,
+.btn-purple.active,
+.open .dropdown-toggle.btn-purple {
+	color: #fff;
+	background: #406cc4;
+	border-color: #315fbc;
+}
+code {
+	color: #333;
+	background: transparent;
+}
+.search {
+	margin-top:10px;
+	border: 1px solid #f5f5f5;
+	border-radius: 5px;
+	padding: 6px 15px;
+	background: #f5f5f5;
+}
+input + label {
+	margin-left: 10px;
+}
+input.btn, .search .btn {
+	padding: 1px 12px;
+}
+.btn.inquiry {
+	margin-left: 20px;
+	padding-bottom: 2px;
+}

@@ -1,0 +1,63 @@
+<div class="page-header"><h2>入庫作業</h2></div>
+<form class="form-inline" role="form">
+	<div>
+	    <div>
+	    	<label  class="control-label">入庫日期
+	    	    <div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+			    	<input class="span2" size="16" type="text" value="12-02-2012">
+			    	<span class="add-on"><i class="icon-th"></i></span>
+			    </div> 
+			</label>
+	    </div>
+	    <div class="search">
+	    	<div >
+	    		<label  class="control-label">商品編號</label>
+	    		<input  class="input-small form-control"  type="text" name="productName"   		 	placeholder="文字輸入">
+	    		<label  class="control-label">條碼</label>
+	    		<input  class="input-small form-control"  type="text" name="productBarCode" 		placeholder="文字輸入">
+	    		<label  class="control-label">數量</label>
+	    		<input  class="input-small form-control"  type="text" name="productManufacturers" 	placeholder="文字輸入">
+				<button type="submit" class="btn btn-default inquiry">查詢</button>
+	    	</div>
+	    </div>
+	    <div style="margin-top:20px;"  >
+	    	<table border="1" class="table table-hover ">
+	    		<thead>
+	    		<tr><th>商品編號</th>
+	    			<th>條碼</th>
+	    			<th>名稱</th>
+	    			<th>入庫數量</th>
+	    			<th>功能</th>
+	    		</tr>
+	    		</thead>
+	    		<tbody>
+			          <tr>
+			          	<td>G1012</td>
+			          	<td>36811231231</td>
+			          	<td>韓國CC霜</td>
+			          	<td>30</td>
+			         	<td>
+			          		<input type="button" value="刪除"  class="btn" data-toggle="modal" data-target="#myModalDel"/>
+			          	</td>	
+			        </tr>
+	    		</tbody>
+	    	</table>
+	    </div>
+	</div>
+</form>
+<div class="modal fade" id="myModalDel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+      	<h4 class="modal-title" id="myModalLabel">確定刪除:</h4><span>嗎?</span>
+      </div>
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+      	<button type="button" class="btn btn-primary">確定</button>
+      </div>
+    </div>
+  </div>
+</div>

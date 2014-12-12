@@ -1,0 +1,11 @@
+{
+    "127.0.0.1": {
+        "caCode": "biomooi",
+        "theme": "biomooi",
+        "title": "[biomooi] WebSite",
+        "validFrom": "",
+        "validTo": "",
+        "locale": "zh",
+        "home": "/index"
+    }
+}

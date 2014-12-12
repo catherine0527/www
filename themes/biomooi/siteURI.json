@@ -1,0 +1,71 @@
+{
+    "/index": {
+        "id": "no"
+    },
+    "/C/merchant/list": {
+        "id": "no"
+    },
+    "/C/merchant/info": {
+        "id": "no"
+    },
+    "/C/merchant/edit": {
+        "id": "no"
+    },
+    "/C/mchCategory/list": {
+        "id": "no"
+    },
+    "/C/mchCategory/edit": {
+        "id": "no"
+    },
+    "/C/mchCategor/info": {
+        "id": "no"
+    },
+    "/C/inventory/list": {
+        "id": "no"
+    },
+    "/C/inventory/inOp": {
+        "id": "no"
+    },
+    "/C/inventory/outOp": {
+        "id": "no"
+    },
+    "/C/inventory/inRecords": {
+        "id": "no"
+    },
+    "/C/inventory/outRecords": {
+        "id": "no"
+    },
+    "/C/order/queryAll": {
+        "id": "no"
+    },
+    "/C/order/chooseItem": {
+        "id": "no"
+    },
+    "/C/order/doneList": {
+        "id": "no"
+    },
+    "/C/order/draftList": {
+        "id": "no"
+    },
+    "/C/order/doneList": {
+        "id": "no"
+    },    
+    "/C/order/chooseItem": {
+        "id": "no"
+    }, 
+    "/C/order/processList": {
+        "id": "no"
+    }, 
+    "/hdBack/menu": {
+        "id": "no"
+    },
+    "/hdBack/menuB": {
+        "id": "no"
+    },
+    "/B/counter/main": {
+        "id": "no"
+    },
+    "/B/counter/mainList": {
+        "id": "no"
+    }
+}

@@ -1,0 +1,93 @@
+
+
+<div class="page-header"><h2>出庫作業</h2></div>
+<form class="form-inline" role="form">
+	<div>
+	    <div>
+				<div class="btn-group">
+	    			<a class="btn btn-warning btn-purple dropdown-toggle" data-toggle="dropdown" href="#">商品分類
+	    				<span class="caret"></span>
+	   				</a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="javascript:<%=ctrl%>.selectCategory();">美肌</a></li>
+				    	<li><a href="#">捲翹睫毛</a></li>
+				    	<li><a href="#">bb霜</a></li>
+				    </ul>
+	    		</div>
+
+				<code>></code>
+				<div class="btn-group">
+	    			<a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">細項
+	    				<span class="caret"></span>
+	   				</a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">透明</a></li>
+				    	<li><a href="#">自然</a></li>
+				    	<li><a href="#">健康</a></li>
+				    </ul>
+	    		</div>
+	    </div>
+
+	    <div class="search">
+	    	<div >
+	    		<label  class="control-label">商品名稱</label>
+	    		<input  class="input-small form-control"  type="text" name="productName"   		 	placeholder="文字輸入">
+	    		<label  class="control-label">商品編號</label>
+	    		<input  class="input-small form-control"  type="text" name="productBarCode" 		placeholder="文字輸入">
+	    		<button type="submit" class="btn btn-default inquiry">查詢</button>
+	    	</div>
+	    </div>
+	    <div style="margin-top:20px;"  >
+	    	<table border="1" class="table table-hover ">
+	    		<thead>
+	    		<tr><th>商品編號</th>
+	    			<th>條碼</th>
+	    			<th>名稱</th>
+	    			<th>庫存量</th>
+	    			<th>提領</th>
+	    		</tr>
+	    		</thead>
+	    		<tbody>
+	    		<tr>
+	    			<td>G101</td>
+	    			<td>36810000323</td>
+	    			<td>GG霜</td>
+	    			<td>30</td>
+	    			<td><input type="button" value="提領" class="btn"/></td>
+	    		</tr>
+	    		</tbody>
+	    	</table>
+	    </div>
+	</div>
+</form>
+<div>
+	<div>
+		<h4>目前清單</h4>
+	</div>
+	 <div style="margin-top:20px;"  >
+	    	<table border="1" class="table table-hover ">
+	    		<thead>
+	    		<tr><th>商品編號</th>
+	    			<th>條碼</th>
+	    			<th>名稱</th>
+	    			<th>目前庫存</th>
+	    			<th>提領量</th>
+	    			<th>取消</th>
+	    		</tr>
+	    		</thead>
+	    		<tbody>
+	    		<tr>
+	    			<td>G101</td>
+	    			<td>36810000323</td>
+	    			<td>GG霜</td>
+	    			<td>30</td>
+	    			<td>10</td>
+	    			<td><input type="button" value="取消" class="btn"/></td>
+	    		</tr>
+	    		</tbody>
+	    	</table>
+	    </div>
+	    <div align="center">
+	    	<button type="submit" class="btn btn-default inquiry">確認</button>
+	    </div>
+</div>
