@@ -1,1 +1,83 @@
-<div></div>
+
+
+<div class="page-header"><h2>新增訂購商品</h2></div>
+<form class="form-inline" role="form">
+	<div>
+	    <div>商品分類
+	    		<code>></code>
+				<div class="btn-group">
+	    			<a class="btn btn-warning btn-purple dropdown-toggle" data-toggle="dropdown" href="#">總類
+	    				<span class="caret"></span>
+	   				</a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="javascript:<%=ctrl%>.selectCategory();">美肌</a></li>
+				    	<li><a href="#">捲翹睫毛</a></li>
+				    	<li><a href="#">bb霜</a></li>
+				    </ul>
+	    		</div>
+
+				<code>></code>
+				<div class="btn-group">
+	    			<a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">第一層分類
+	    				<span class="caret"></span>
+	   				</a>
+	   				
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">透明</a></li>
+				    	<li><a href="#">自然</a></li>
+				    	<li><a href="#">健康</a></li>
+				    </ul>
+	    		</div>
+	    		<code>></code>
+	    		<div class="btn-group">
+	    			<a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">第二層分類
+	    				<span class="caret"></span>
+	   				</a>
+				    <ul class="dropdown-menu">
+				    	<li><a href="#">透明</a></li>
+				    	<li><a href="#">自然</a></li>
+				    	<li><a href="#">健康</a></li>
+				    </ul>
+	    		</div>
+	    </div>
+
+	    <div class="search">
+	    	<div >
+	    		<label  class="control-label">商品條碼</label>
+	    		<input  class="input-small form-control"  type="text" name="productName"   		 	placeholder="文字輸入">
+	    		<label  class="control-label">名稱</label>
+	    		<input  class="input-small form-control"  type="text" name="productBarCode" 		placeholder="文字輸入">
+				<button type="submit" class="btn btn-default inquiry">查詢</button>
+	    	</div>
+	    </div>
+	    <div style="margin-top:20px;"  >
+	    	<table border="1" class="table table-hover ">
+	    		<thead>
+	    		<tr><th>商品編號</th>
+	    			<th>商品名稱</th>
+	    			<th>價格</th>
+	    			<th>訂購量</th>
+	    			<th>訂購</th>
+	    		</tr>
+	    		</thead>
+	    		<tbody>
+					
+	    		<tr>
+	    			<td>36810000323</td>
+	    			<td>bb霜</td>
+	    			<td>韓國</td>
+	    			<td>699</td>
+	    			<td><input type="button" value="訂購" class="btn"/></td>
+	    		</tr>
+	    		<tr>
+	    			<td>36810000321</td>
+	    			<td>bb霜</td>
+	    			<td>韓國</td>
+	    			<td>699</td>
+	    			<td><input class="btn" type="button" value="訂購"/></td>
+	    		</tr>
+	    		</tbody>
+	    	</table>
+	    </div>
+	</div>
+</form>

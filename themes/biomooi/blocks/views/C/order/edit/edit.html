@@ -1,1 +1,111 @@
-<div></div>
+<div class="page-header"><h2>編輯訂單明細</h2></div>
+<div class="row">
+	<div  class="col-md-8">
+		<form class="form-horizontal" role="form">
+		 	<div class="form-group">
+		    	<label class="col-sm-2 control-label">訂單號碼</label>
+			    <div class="col-sm-5">
+			      <input type="text" class="form-control" >
+			    </div>
+		  	</div>
+		  	<div class="form-group">
+		    	<label class="col-sm-2 control-label">訂購日期</label>
+			    <div class="col-sm-5">
+			      	<input type="text" class="form-control" >
+			   	</div>
+		  	</div>
+		  	<div class="form-group">
+		    	<label class="col-sm-2 control-label">訂單總價</label>
+			    <div class="col-sm-5">
+			      	<input type="text" class="form-control" >
+			   	</div>
+		  	</div>	
+			<div class="form-group">
+		    	<label class="col-sm-2 control-label">訂購明細</label>
+			    <div class="col-sm-5">
+			      	<input type="text" class="form-control" >
+			   	</div>
+		  	</div>
+		</form>
+	</div>
+</div>
+<div align="right" style="margin-top:20px;"  >
+	<input type="buuton" value="+" class="btn">
+</div>
+<div style="margin-top:20px;"  >
+	<table border="1" class="table table-hover ">
+		<thead>
+		<tr><th>序號</th>
+			<th>商品編號</th>
+			<th>商品內容</th>
+			<th>數量</th>
+			<th>單價</th>
+			<th>小計</th>
+			<th>功能</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>1</td>
+			<td>36810001232</td>
+			<td>你我他TEST</td>
+			<td>4509</td>
+			<td>23</td>
+			<td>1000000</td>
+         	<td>
+		  		<input type="button" value="刪除"  class="btn" data-toggle="modal" data-target="#myModalDel"/>
+		  		<input type="button" value="調整"  class="btn" data-toggle="modal" data-target="#myModalUpd"/>
+		  	</td>	
+		</tr>
+		
+		</tbody>
+	</table>
+</div>	
+<div class="row">
+	<div  class="col-md-6" align="left">
+		<input type="button" value="確認送出"  class="btn" data-toggle="modal" />
+	</div>
+	<div class="col-md-6" align="right">
+		<input type="button" value="儲存"  class="btn" data-toggle="modal" />
+	</div>
+</div>	
+<div class="modal fade" id="myModalUpd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">調整數量</h4>
+      </div>
+      <div class="modal-body">
+        <div><label  class="control-label">商品編號:</label><span>test</span></div>
+        <div><label  class="control-label">商品名稱:</label>
+        	 <input  class="input-small form-control"  type="text" placeholder="文字輸入">
+        </div>
+		<div><label  class="control-label">數量:</label>
+        	 <input  class="input-small form-control"  type="text" placeholder="文字輸入">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+<div class="modal fade" id="myModalDel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+      	<h4 class="modal-title" id="myModalLabel">確定刪除:</h4><span>嗎?</span>
+      </div>
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+      	<button type="button" class="btn btn-primary">確定</button>
+      </div>
+    </div>
+  </div>
+</div>
